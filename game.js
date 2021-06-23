@@ -1,0 +1,86 @@
+let arrComputer = [];
+
+while (arrComputer.length < 4) {
+  var r = Math.floor(Math.random() * 10);
+  if (arrComputer.indexOf(r) === -1) arrComputer.push(r);
+}
+console.log(arrComputer);
+
+let num1, num2, num3, num4;
+let bollH1 = document.getElementById("bool");
+let kliaH1 = document.getElementById("klia");
+let table = document.getElementById("table");
+let winner = document.getElementById("winner");
+
+console.log("arrComputer: ", arrComputer);
+let bool = 0;
+let klia = 0;
+
+function check() {
+  num1 = document.getElementById("num1");
+  num2 = document.getElementById("num2");
+  num3 = document.getElementById("num3");
+  num4 = document.getElementById("num4");
+
+  let arrUser = [
+    parseInt(num1.value),
+    parseInt(num2.value),
+    parseInt(num3.value),
+    parseInt(num4.value),
+  ];
+  console.log("arrUser: ", arrUser);
+
+  for (let numUser = 0; numUser < 4; numUser++) {
+    for (let numComputer = 0; numComputer < arrComputer.length; numComputer++) {
+      if (arrUser[numUser] === arrComputer[numComputer]) {
+        klia++;
+        if (numUser === numComputer) {
+          bool++;
+          klia--;
+        }
+      }
+    }
+  }
+  console.log("bool is:", bool);
+  console.log("klia is:", klia);
+
+  if (bool === 4) {
+    console.log("you winner");
+    winner.innerHTML = "ניצחת המספרים הם: " + arrComputer;
+    table.appendChild(winner);
+  } else {
+    let tr = document.createElement("tr");
+    let td1 = document.createElement("td");
+    let td2 = document.createElement("td");
+    let td3 = document.createElement("td");
+    let td4 = document.createElement("td");
+    let td5 = document.createElement("td");
+    let td6 = document.createElement("td");
+    var boolTable = document.createTextNode(bool);
+    var kliaTable = document.createTextNode(klia);
+    var numTable1 = document.createTextNode(num1.value);
+    var numTable2 = document.createTextNode(num2.value);
+    var numTable3 = document.createTextNode(num3.value);
+    var numTable4 = document.createTextNode(num4.value);
+
+    td1.appendChild(boolTable);
+    td2.appendChild(kliaTable);
+    td3.appendChild(numTable1);
+    td4.appendChild(numTable2);
+    td5.appendChild(numTable3);
+    td6.appendChild(numTable4);
+
+    tr.appendChild(td1);
+    tr.appendChild(td2);
+    tr.appendChild(td3);
+    tr.appendChild(td4);
+    tr.appendChild(td5);
+    tr.appendChild(td6);
+    table.appendChild(tr);
+
+    num1.value = "";
+    num2.value = "";
+    num3.value = "";
+    num4.value = "";
+  }
+}

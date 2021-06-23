@@ -1,0 +1,42 @@
+h1 {
+  text-align: center;
+  margin: 0 auto;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+
+  padding: 8px;
+}
+input {
+  height: 40px;
+  width: 40px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.inputDiv {
+  text-align: center;
+
+  margin-top: 50px;
+}
+.tableDiv {
+}
+.button {
+  border: 1px solid red;
+  background-color: red;
+  height: 45px;
+  font-size: 23px;
+  font-family: ui-monospace;
+  font-weight: bold;
+  border-radius: 22px;
+}
