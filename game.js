@@ -77,6 +77,11 @@ function check() {
   num2.value = "";
   num3.value = "";
   num4.value = "";
+  num1.className = num1.options[num1.selectedIndex].className;
+  num2.className = num2.options[num2.selectedIndex].className;
+  num3.className = num3.options[num3.selectedIndex].className;
+  num4.className = num4.options[num4.selectedIndex].className;
+  //   num1.selectedIndex = num1.value;
 
   if (bool === 4) {
     console.log("you winner");
