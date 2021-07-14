@@ -8,21 +8,107 @@
   <body>
     <h1 id="myDiv">משחק בול פגיעה</h1>
     <div class="inputDiv">
-      <input type="number" max="9" min="0" id="num1" value="" />
-      <input type="number" max="9" min="0" id="num2" value="" />
-      <input type="number" max="9" min="0" id="num3" value="" />
-      <input type="number" max="9" min="0" id="num4" value="" />
-      <button class="button" onclick="check()">בדוק</button>
+      <table>
+        <tr>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+        </tr>
+        <tr>
+          <td>
+            <select
+              id="num1"
+              onchange="this.className=this.options[this.selectedIndex].className"
+              class="placeholder"
+            >
+              <option value="" selected class="placeholder" disabled>
+                placeholder
+              </option>
+              <option value="1" class="green">green</option>
+              <option value="2" class="red">red</option>
+              <option value="3" class="yellow">yellow</option>
+              <option value="4" class="blue">blue</option>
+              <option value="5" class="pink">pink</option>
+              <option value="6" class="black">black</option>
+              <option value="7" class="brown">brown</option>
+              <option value="8" class="orange">orange</option>
+            </select>
+          </td>
+          <td>
+            <select
+              id="num2"
+              onchange="this.className=this.options[this.selectedIndex].className"
+              class="placeholder"
+            >
+              <option value="" selected class="placeholder" disabled>
+                placeholder
+              </option>
+              <option value="1" class="green">green</option>
+              <option value="2" class="red">red</option>
+              <option value="3" class="yellow">yellow</option>
+              <option value="4" class="blue">blue</option>
+              <option value="5" class="pink">pink</option>
+              <option value="6" class="black">black</option>
+              <option value="7" class="brown">brown</option>
+              <option value="8" class="orange">orange</option>
+            </select>
+          </td>
+          <td>
+            <select
+              id="num3"
+              onchange="this.className=this.options[this.selectedIndex].className"
+              class="placeholder"
+            >
+              <option value="" selected class="placeholder" disabled>
+                placeholder
+              </option>
+              <option value="1" class="green">green</option>
+              <option value="2" class="red">red</option>
+              <option value="3" class="yellow">yellow</option>
+              <option value="4" class="blue">blue</option>
+              <option value="5" class="pink">pink</option>
+              <option value="6" class="black">black</option>
+              <option value="7" class="brown">brown</option>
+              <option value="8" class="orange">orange</option>
+            </select>
+          </td>
+          <td>
+            <select
+              id="num4"
+              onchange="this.className=this.options[this.selectedIndex].className"
+              class="placeholder"
+            >
+              <option value="" selected class="placeholder" disabled>
+                placeholder
+              </option>
+              <option value="1" class="green">green</option>
+              <option value="2" class="red">red</option>
+              <option value="3" class="yellow">yellow</option>
+              <option value="4" class="blue">blue</option>
+              <option value="5" class="pink">pink</option>
+              <option value="6" class="black">black</option>
+              <option value="7" class="brown">brown</option>
+              <option value="8" class="orange">orange</option>
+            </select>
+          </td>
+          <!-- <td><input type="number" max="6" min="0" id="num1" value="" /></td>
+          <td><input type="number" max="6" min="0" id="num2" value="" /></td>
+          <td><input type="number" max="6" min="0" id="num3" value="" /></td>
+          <td><input type="number" max="6" min="0" id="num4" value="" /></td> -->
+          <td><button class="button" onclick="check()">בדוק</button></td>
+        </tr>
+      </table>
     </div>
     <div class="tableDiv">
       <table id="table">
-        <tr style="background-color: #ff748a">
-          <th>בול</th>
-          <th>פגיעה</th>
+        <tr style="background-color: #ffffff5c">
           <th>בחירה 1</th>
           <th>בחירה 2</th>
           <th>בחירה 3</th>
           <th>בחירה 4</th>
+          <th>בול</th>
+          <th>פגיעה</th>
         </tr>
       </table>
     </div>

@@ -1,6 +1,12 @@
+body {
+  background-image: url("reka12.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 h1 {
   text-align: center;
   margin: 0 auto;
+  color: white;
 }
 table {
   font-family: arial, sans-serif;
@@ -13,7 +19,7 @@ table {
 td,
 th {
   border: 1px solid #dddddd;
-
+  color: rgb(0, 0, 0);
   padding: 8px;
 }
 input {
@@ -22,21 +28,71 @@ input {
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
 }
 .inputDiv {
   text-align: center;
 
   margin-top: 50px;
 }
+#winner {
+  margin: auto;
+  width: 23%;
+  padding: 10px;
+  color: white;
+  font-size: 38px;
+  font-weight: bold;
+}
 .tableDiv {
 }
 .button {
-  border: 1px solid red;
-  background-color: red;
   height: 45px;
   font-size: 23px;
   font-family: ui-monospace;
   font-weight: bold;
   border-radius: 22px;
+  cursor: pointer;
+}
+select {
+  color: black;
+}
+
+.placeholder {
+  color: gray;
+}
+
+.green {
+  color: green;
+  background-color: green;
+}
+
+.red {
+  color: red;
+  background-color: red;
+}
+.yellow {
+  color: yellow;
+  background-color: yellow;
+}
+
+.blue {
+  color: blue;
+  background-color: blue;
+}
+.black {
+  color: black;
+  background-color: black;
+}
+
+.orange {
+  color: orange;
+  background-color: orange;
+}
+.pink {
+  color: pink;
+  background-color: pink;
+}
+
+.brown {
+  color: brown;
+  background-color: brown;
 }
