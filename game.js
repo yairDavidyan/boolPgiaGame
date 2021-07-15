@@ -12,6 +12,7 @@ let kliaH1 = document.getElementById("klia");
 let table = document.getElementById("table");
 let winner = document.getElementById("winner");
 let tableDiv = document.querySelector(".tableDiv");
+let counter = 1;
 
 console.log("arrComputer: ", arrComputer);
 let bool = 0;
@@ -54,16 +55,25 @@ function check() {
   let td4 = document.createElement("td");
   let td5 = document.createElement("td");
   let td6 = document.createElement("td");
+  let td7 = document.createElement("td");
   var boolTable = document.createTextNode(bool);
   var kliaTable = document.createTextNode(klia);
+  var counterTable = document.createTextNode(counter++);
 
   td1.appendChild(boolTable);
+  td1.style.color = "red";
+  td1.style.fontWeight = "bold";
   td2.appendChild(kliaTable);
+  td2.style.color = "yellow";
+  td2.style.fontWeight = "bold";
+  td7.appendChild(counterTable);
 
   td3.style.backgroundColor = num1.options[num1.selectedIndex].className;
   td4.style.backgroundColor = num2.options[num2.selectedIndex].className;
   td5.style.backgroundColor = num3.options[num3.selectedIndex].className;
   td6.style.backgroundColor = num4.options[num4.selectedIndex].className;
+
+  tr.appendChild(td7);
 
   tr.appendChild(td3);
   tr.appendChild(td4);
@@ -81,7 +91,6 @@ function check() {
   num2.className = num2.options[num2.selectedIndex].className;
   num3.className = num3.options[num3.selectedIndex].className;
   num4.className = num4.options[num4.selectedIndex].className;
-  //   num1.selectedIndex = num1.value;
 
   if (bool === 4) {
     console.log("you winner");

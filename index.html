@@ -7,6 +7,18 @@
   </head>
   <body>
     <h1 id="myDiv">משחק בול פגיעה</h1>
+
+    <div class="flex">
+      <div class="colorBox red"></div>
+      <div class="colorBox yellow"></div>
+      <div class="colorBox green"></div>
+      <div class="colorBox brown"></div>
+      <div class="colorBox black"></div>
+      <div class="colorBox blue"></div>
+      <div class="colorBox pink"></div>
+      <div class="colorBox orange"></div>
+    </div>
+
     <div class="inputDiv">
       <table>
         <tr>
@@ -23,16 +35,16 @@
               class="placeholder"
             >
               <option value="" selected class="placeholder" disabled>
-                placeholder
+                בחר צבע
               </option>
-              <option value="1" class="green">green</option>
-              <option value="2" class="red">red</option>
-              <option value="3" class="yellow">yellow</option>
-              <option value="4" class="blue">blue</option>
-              <option value="5" class="pink">pink</option>
-              <option value="6" class="black">black</option>
-              <option value="7" class="brown">brown</option>
-              <option value="8" class="orange">orange</option>
+              <option value="1" class="green">ירוק</option>
+              <option value="2" class="red">אדום</option>
+              <option value="3" class="yellow">צהוב</option>
+              <option value="4" class="blue">כחול</option>
+              <option value="5" class="pink">ורוד</option>
+              <option value="6" class="black">שחור</option>
+              <option value="7" class="brown">חום</option>
+              <option value="8" class="orange">כתום</option>
             </select>
           </td>
           <td>
@@ -42,16 +54,16 @@
               class="placeholder"
             >
               <option value="" selected class="placeholder" disabled>
-                placeholder
+                בחר צבע
               </option>
-              <option value="1" class="green">green</option>
-              <option value="2" class="red">red</option>
-              <option value="3" class="yellow">yellow</option>
-              <option value="4" class="blue">blue</option>
-              <option value="5" class="pink">pink</option>
-              <option value="6" class="black">black</option>
-              <option value="7" class="brown">brown</option>
-              <option value="8" class="orange">orange</option>
+              <option value="1" class="green">ירוק</option>
+              <option value="2" class="red">אדום</option>
+              <option value="3" class="yellow">צהוב</option>
+              <option value="4" class="blue">כחול</option>
+              <option value="5" class="pink">ורוד</option>
+              <option value="6" class="black">שחור</option>
+              <option value="7" class="brown">חום</option>
+              <option value="8" class="orange">כתום</option>
             </select>
           </td>
           <td>
@@ -61,16 +73,16 @@
               class="placeholder"
             >
               <option value="" selected class="placeholder" disabled>
-                placeholder
+                בחר צבע
               </option>
-              <option value="1" class="green">green</option>
-              <option value="2" class="red">red</option>
-              <option value="3" class="yellow">yellow</option>
-              <option value="4" class="blue">blue</option>
-              <option value="5" class="pink">pink</option>
-              <option value="6" class="black">black</option>
-              <option value="7" class="brown">brown</option>
-              <option value="8" class="orange">orange</option>
+              <option value="1" class="green">ירוק</option>
+              <option value="2" class="red">אדום</option>
+              <option value="3" class="yellow">צהוב</option>
+              <option value="4" class="blue">כחול</option>
+              <option value="5" class="pink">ורוד</option>
+              <option value="6" class="black">שחור</option>
+              <option value="7" class="brown">חום</option>
+              <option value="8" class="orange">כתום</option>
             </select>
           </td>
           <td>
@@ -80,35 +92,34 @@
               class="placeholder"
             >
               <option value="" selected class="placeholder" disabled>
-                placeholder
+                בחר צבע
               </option>
-              <option value="1" class="green">green</option>
-              <option value="2" class="red">red</option>
-              <option value="3" class="yellow">yellow</option>
-              <option value="4" class="blue">blue</option>
-              <option value="5" class="pink">pink</option>
-              <option value="6" class="black">black</option>
-              <option value="7" class="brown">brown</option>
-              <option value="8" class="orange">orange</option>
+              <option value="1" class="green">ירוק</option>
+              <option value="2" class="red">אדום</option>
+              <option value="3" class="yellow">צהוב</option>
+              <option value="4" class="blue">כחול</option>
+              <option value="5" class="pink">ורוד</option>
+              <option value="6" class="black">שחור</option>
+              <option value="7" class="brown">חום</option>
+              <option value="8" class="orange">כתום</option>
             </select>
           </td>
-          <!-- <td><input type="number" max="6" min="0" id="num1" value="" /></td>
-          <td><input type="number" max="6" min="0" id="num2" value="" /></td>
-          <td><input type="number" max="6" min="0" id="num3" value="" /></td>
-          <td><input type="number" max="6" min="0" id="num4" value="" /></td> -->
+
           <td><button class="button" onclick="check()">בדוק</button></td>
         </tr>
       </table>
     </div>
     <div class="tableDiv">
-      <table id="table">
+      <table style="width: 1020px" id="table">
         <tr style="background-color: #ffffff5c">
-          <th>בחירה 1</th>
-          <th>בחירה 2</th>
-          <th>בחירה 3</th>
-          <th>בחירה 4</th>
-          <th>בול</th>
-          <th>פגיעה</th>
+          <th style="width: 33px">שורה</th>
+
+          <th style="width: 230px">1</th>
+          <th style="width: 230px">2</th>
+          <th style="width: 230px">3</th>
+          <th style="width: 230px">4</th>
+          <th style="width: 33px">בול</th>
+          <th style="width: 33px">פגיעה</th>
         </tr>
       </table>
     </div>
